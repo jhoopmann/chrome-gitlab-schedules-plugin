@@ -1,0 +1,31 @@
+body {
+    padding:0;
+    margin:0;
+}
+button {
+    padding:10px;
+    background-color: white;
+    color:dimgrey;
+    border:unset;
+    width:200px;
+    height:40px;
+    font-size:12px;
+}
+button:hover {
+    background-color: lightgrey;
+    color:black;
+    transition:0.1s ease-in-out;
+    text-decoration: underline;
+    cursor:pointer;
+}
+button.disabled {
+    cursor:not-allowed;
+    color:lightgrey;
+}
+#label {
+    border-top: 1px solid dimgrey;
+    padding: 20px;
+    font-size: 10px;
+    color: dimgrey;
+    text-align: center;
+}
