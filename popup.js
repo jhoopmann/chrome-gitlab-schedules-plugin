@@ -197,7 +197,7 @@ function checkForCopyableSchedule()
  *
  * @param result
  */
-function checkForNewScheduleResult(result)
+function checkForPasteableScheduleResult(result)
 {
     chrome.storage.local.get(
         'variables',
@@ -234,7 +234,7 @@ function checkForNewScheduleResult(result)
 /**
  * check wether we are on new schedule page
  */
-function checkForNewSchedule()
+function checkForPasteableSchedule()
 {
 
     let uri = document.documentURI;
@@ -273,8 +273,8 @@ function checkForNewSchedule()
             target: {
                 tabId: currentTab.id
             },
-            function: checkForNewSchedule
+            function: checkForPasteableSchedule
         },
-        checkForNewScheduleResult
+        checkForPasteableScheduleResult
     )
 })();
