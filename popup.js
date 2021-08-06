@@ -33,7 +33,7 @@ function writeScheduleData()
                 <option value="file"` + (type === 'file' ? ' selected' : '') + `>File</option>
             </select>
             <input class="js-ci-variable-input-key ci-variable-body-item qa-ci-variable-input-key form-control gl-form-input table-section section-15" 
-                name="schedule[variables_attributes][][key]" placeholder="Input variable key" type="text" 
+                name="schedule[variables_attributes][][key]" placeholder="Input variable key" type="text"
                 value="`+ key +`"><p class="gl-field-error hidden">This field is required.</p>
             <div class="ci-variable-body-item gl-show-field-errors table-section section-15 border-top-0 p-0">
             <div class="form-control js-secret-value-placeholder qa-ci-variable-input-value overflow-hidden hide">
@@ -44,13 +44,11 @@ function writeScheduleData()
             <p class="masking-validation-error gl-field-error hide" style="display: none;">
                 Cannot use Masked Variable with current value
                 <a target="_blank" rel="noopener noreferrer" href="/help/ci/variables/README#mask-a-cicd-variable">
-                <svg class="s16" data-testid="question-o-icon">
-                <use xlink:href="/assets/icons-1b2dadc4c3d49797908ba67b8f10da5d63dd15d859bde28d66fb60bbb97a4dd5.svg#question-o"></use>
-                </svg></a>
+                ?</a>
             </p>
         </div>
         <button aria-label="Remove variable row" class="gl-button btn btn-default btn-icon js-row-remove-button ci-variable-row-remove-button table-section" type="button">
-            <svg class="s16" data-testid="close-icon"><use xlink:href="/assets/icons-1b2dadc4c3d49797908ba67b8f10da5d63dd15d859bde28d66fb60bbb97a4dd5.svg#close"></use></svg>
+            x
         </button>
         </div>`;
     }
