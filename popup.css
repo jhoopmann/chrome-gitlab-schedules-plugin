@@ -9,7 +9,13 @@ button {
     border:unset;
     width:200px;
     height:40px;
-    font-size:12px;
+    font-size:14px;
+}
+button .label {
+    margin-left:10px;
+}
+button .icon {
+    font-size:18px;
 }
 button:hover {
     background-color: lightgrey;
