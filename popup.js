@@ -221,6 +221,8 @@ function checkForPasteableScheduleResult(result)
                                     function: writeScheduleData
                                 }
                             );
+                            
+                            window.close();
                         }
                     );
                 } else {
