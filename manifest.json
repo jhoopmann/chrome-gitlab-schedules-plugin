@@ -1,4 +1,5 @@
 {
+  "author": "Jonas Hoopmann",
   "name": "Gitlab Schedules",
   "description": "easily copy GitLab schedules",
   "version": "1.0",
