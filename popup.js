@@ -77,9 +77,8 @@ function writeScheduleData()
 
 /**
  * open new schedule page tab via stored createuri in chrome local storage
- * @returns {Promise<void>}
  */
-async function openNewSchedule()
+function openNewSchedule()
 {
     chrome.storage.local.get(
         'createUri',
@@ -99,7 +98,7 @@ async function openNewSchedule()
  * handle variables result and safe into chrome local storage, open new schedule page
  * @param result
  */
-async function getVariablesResult(result)
+function getVariablesResult(result)
 {
     let variables = result[0].result;
     chrome.storage.local.set(
@@ -198,7 +197,7 @@ function checkForCopyableSchedule()
  *
  * @param result
  */
-async function checkForNewScheduleResult(result)
+function checkForNewScheduleResult(result)
 {
     chrome.storage.local.get(
         'variables',
@@ -235,7 +234,8 @@ async function checkForNewScheduleResult(result)
 /**
  * check wether we are on new schedule page
  */
-function checkForNewSchedule() {
+function checkForNewSchedule()
+{
 
     let uri = document.documentURI;
     if (uri.indexOf('pipeline_schedules') > -1) {
