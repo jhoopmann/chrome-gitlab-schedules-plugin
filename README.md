@@ -1,5 +1,5 @@
 # chrome-gitlab-schedules-plugin
-Google Chrome plugin for easily copying schedules variables and paste them into new created schedule
+Google Chrome plugin for easily copy of schedule variables and paste them into new created schedule
 
 open chrome://extensions
 activate developer options
