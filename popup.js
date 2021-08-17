@@ -175,20 +175,20 @@ function checkForCopyableScheduleResult(result)
 function checkForCopyableSchedule()
 {
     let uri = document.documentURI;
-    if (uri.indexOf('pipeline_schedules') > -1) {
-        uri = uri.split('/');
 
-        if (uri[uri.length - 1] === 'edit') {
-            uri.pop();
-            uri.pop();
-        } else if (uri[uri.length -1 ] === 'new') {
-            uri.pop();
-        }
+    uri = uri.split('/');
 
-        if (document.getElementsByClassName('ci-variable-list').length === 1) {
-            return uri.join('/') + '/new';
-        }
+    if (uri[uri.length - 1] === 'edit') {
+        uri.pop();
+        uri.pop();
+    } else if (uri[uri.length -1 ] === 'new') {
+        uri.pop();
     }
+
+    if (document.getElementsByClassName('ci-variable-list').length === 1) {
+        return uri.join('/') + '/new';
+    }
+
     return false;
 }
 
@@ -221,7 +221,7 @@ function checkForPasteableScheduleResult(result)
                                     function: writeScheduleData
                                 }
                             );
-                            
+
                             window.close();
                         }
                     );
@@ -238,13 +238,10 @@ function checkForPasteableScheduleResult(result)
  */
 function checkForPasteableSchedule()
 {
-
-    let uri = document.documentURI;
-    if (uri.indexOf('pipeline_schedules') > -1) {
-        if (document.getElementsByClassName('ci-variable-list').length === 1) {
-            return true;
-        }
+    if (document.getElementsByClassName('ci-variable-list').length === 1) {
+        return true;
     }
+
     return false;
 }
 
